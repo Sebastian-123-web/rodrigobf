@@ -65,7 +65,7 @@ const dataProjects = [
     {
         title : "Boris the Teddy",
         description : "El compañero diseñado especialmente para niños con Síndrome de Espectro Autista.",
-        urlimage : "https://i.postimg.cc/y6JRGxrt/boris.jpg",
+        urlimage : "https://i.postimg.cc/9Qd7hT40/Captura-de-pantalla-2024-09-18-173809.png",
         urlWeb: "https://boris-the-teddy.vercel.app/",
         urlGithub : "https://github.com/Sebastian-123-web/BoristheTeddy",
         technology : [
@@ -82,13 +82,95 @@ const dataProjects = [
                 color: "#ea4c1d"
             }
         ]
+    },
+    {
+        title : "Sistema de ticket",
+        description : "Sistema para la administración de Equipos de computo y la gestion de incidencias en una empresa.",
+        urlimage : "https://i.postimg.cc/RZngQ3JT/Captura-de-pantalla-2024-09-18-170107.png",
+        urlWeb: "https://system-ticket-frontend.vercel.app/",
+        urlGithub : "https://github.com/Sebastian-123-web/SystemTicket-frontend",
+        technology : [
+            {
+                name: "Vite",
+                color: "#e96228"
+            },
+            {
+                name: "Tailwindcss",
+                color: "#0091d5"
+            },
+            {
+                name: "Material-Tailwind",
+                color: "#ea4c1d"
+            },
+            {
+                name: "React Router Dom",
+                color: "#ea4c1d"
+            }
+        ]
+    },
+    {
+        title : "CodeJunior",
+        description : "Proyecto grupal - Web de trabajos para desarrolladores Junior, un portal donde emplesas de desarrollo o personas independientes pueden buscar a un desarrollador con poca o nada de experiencia.",
+        urlimage : "https://i.postimg.cc/cCBmCjCg/Captura-de-pantalla-2024-09-18-172547.png",
+        urlWeb: "https://code-junior.vercel.app/",
+        urlGithub : "https://github.com/Sebastian-123-web/codeJunior",
+        technology : [
+            {
+                name: "React",
+                color: "#e96228"
+            },
+            {
+                name: "React-router-dom",
+                color: "#0091d5"
+            },
+            {
+                name: "Sweetalert2",
+                color: "#ea4c1d"
+            }
+        ]
+    },
+    {
+        title : "Primer portafolio",
+        description : "Mi primer portafolio con HTML, CSS y Javscript.",
+        urlimage : "https://i.postimg.cc/VN02vf8J/Captura-de-pantalla-2024-09-18-173458.png",
+        urlWeb: "https://frontend-g19-one.vercel.app/",
+        urlGithub : "https://github.com/Sebastian-123-web/frontend_g19",
+        technology : [
+            {
+                name: "HTML",
+                color: "#e96228"
+            },
+            {
+                name: "CSS",
+                color: "#0091d5"
+            },
+            {
+                name: "Javascript",
+                color: "#ea4c1d"
+            }
+        ]
+    },
+    {
+        title : "Tarea: Blog Afrianska",
+        description : "Web donde nuestro mi habilidad con HTML y CSS.",
+        urlimage : "https://i.postimg.cc/WzSs8Nt2/Captura-de-pantalla-2024-09-18-174900.png",
+        urlWeb: "https://quinto-reto.vercel.app/",
+        urlGithub : "https://github.com/Sebastian-123-web/quinto_reto",
+        technology : [
+            {
+                name: "HTML",
+                color: "#e96228"
+            },
+            {
+                name: "CSS",
+                color: "#0091d5"
+            }
+        ]
     }
 ]
 
 const galeryProjects = document.getElementById('galery-projects')
 let insertProject = ''
-
-console.log(dataProjects)
 
 dataProjects.forEach( p => {
     insertProject += `
@@ -108,13 +190,11 @@ dataProjects.forEach( p => {
             
             <p class="description-project">${p.description}</p>
             <div class="tech-project">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>React</span>
-                <span>Node js</span>
+                ${p.technology.map((t)=>(
+                    `<span>${t.name}</span>`
+                )).join('')}
             </div>
         </article>
     `
 })
-console.log(insertProject)
 galeryProjects.innerHTML = insertProject

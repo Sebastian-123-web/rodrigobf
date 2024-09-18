@@ -41,5 +41,26 @@ const project = () => [
                 color: "#ea4c1d"
             }
         ]
+    },
+    {
+        title : "Sistema de ticket",
+        description : "Sistema para la administración de Equipos de computo y la gestion de incidencias en una empresa.",
+        urlimage : "https://i.postimg.cc/RZngQ3JT/Captura-de-pantalla-2024-09-18-170107.png",
+        urlWeb: "https://system-ticket-frontend.vercel.app/",
+        urlGithub : "https://github.com/Sebastian-123-web/SystemTicket-frontend",
+        technology : [
+            {
+                name: "Vite",
+                color: "#e96228"
+            },
+            {
+                name: "Tailwindcss",
+                color: "#0091d5"
+            },
+            {
+                name: "Material-Tailwind",
+                color: "#ea4c1d"
+            }
+        ]
     }
 ]

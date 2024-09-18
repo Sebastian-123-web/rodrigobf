@@ -5,8 +5,8 @@
     font-weight: 400;
     font-style: normal;
     color: #fff;
+    scroll-margin: initial;
 }
-
 html {
     height: 2000px;
 }
@@ -107,9 +107,11 @@ header .container {
     margin-top: 20px;
     margin-bottom: 150px;
     align-items: center;
+    scroll-margin: 0;
 }
 .logo {
     transition: 0.5s;
+    cursor: pointer;
 }
 .logo:hover {
     background-color: rgba(20, 160, 202, 0.181);
@@ -144,6 +146,7 @@ header .container {
 /* ********************************* */
 section {
     margin-bottom: 150px;
+    scroll-margin: 0;
 }
 .infomation-prolife{
     display: flex;
@@ -232,7 +235,10 @@ section {
     gap: 24px;
 }
 .project {
-    width: 100%;
+    border: 1px solid #222223;
+    background-color: #22222399;
+    padding: 30px;
+    border-radius: 15px;
 }
 
 .img-project {
@@ -242,7 +248,7 @@ section {
     margin: 0 0 25px 0;
 }
 .img-project img {
-    width: 500px;
+    width: 100%;
     object-fit: contain;
     object-position: center center;
 }
