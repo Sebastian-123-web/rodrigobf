@@ -233,6 +233,7 @@ section {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 24px;
+    padding-bottom: 100px;
 }
 .project {
     border: 1px solid #222223;
@@ -319,11 +320,22 @@ section {
 
 
 
+/* ********* */
+/* SOBRE MI */
+/* ********* */
+.sobre-mi{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
 
-
-
-
-
+/* ****** */
+/* FOOTER */
+/* ****** */
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 /* ******************* */
 /* ADAPTADO PARA MOVIL */

@@ -166,6 +166,23 @@ const dataProjects = [
                 color: "#0091d5"
             }
         ]
+    },
+    {
+        title : "Tarea: Sunnyside",
+        description : "Proyecto grupal - Web donde nuestro mi habilidad con HTML y CSS.",
+        urlimage : "https://i.postimg.cc/8zzmttXD/Captura-de-pantalla-2024-09-18-180108.png",
+        urlWeb: "https://segundo-reto-grupal.vercel.app/",
+        urlGithub : "https://github.com/Sebastian-123-web/segundo_reto_grupal",
+        technology : [
+            {
+                name: "HTML",
+                color: "#e96228"
+            },
+            {
+                name: "CSS",
+                color: "#0091d5"
+            }
+        ]
     }
 ]
 
