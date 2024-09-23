@@ -41,15 +41,15 @@ for (let i = 1; i <= starLot; i++) {
 star[0].innerHTML = stars
 */
 
-const totalStar = 200
+const totalStar = 300
 const universe = document.getElementsByClassName('universe')
-const screenHeight = document.documentElement.offsetHeight
+const screenHeight = document.documentElement.scrollHeight
 console.log(screenHeight)
 
 let stars = []
 
 for (let index = 0; index < totalStar; index++) {
-    stars += `<span style="top: ${Math.ceil(Math.random()*100)}vh; left: ${Math.ceil(Math.random()*97)}vw;" class="color_star${Math.ceil(Math.random()*3)}"></span>`
+    stars += `<span style="top: calc(${Math.ceil(Math.random()*screenHeight*2)}px - 100vh); left: ${Math.ceil(Math.random()*97)}vw;" class="color_star${Math.ceil(Math.random()*3)}"></span>`
 }
 
 universe[0].innerHTML = stars
