@@ -9,6 +9,7 @@
 }
 html {
     height: 2000px;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -22,6 +23,12 @@ body {
     width: 1024px;
     margin: auto;
 }
+.center-100vh{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 /* ************************ */
 /*  UNIVERSO CON ESTRELLAS  */
@@ -30,6 +37,8 @@ body {
     position: absolute;
     z-index: -10;
     margin: auto;
+    width: 100%;
+    height: 100%;
 }
 .universe span {
     position: absolute;
@@ -351,11 +360,7 @@ section {
 /* ********* */
 /* SOBRE MI */
 /* ********* */
-.sobre-mi{
-    padding-top: 100px;
-    padding-bottom: 100px;
-}
-.title-sobre-mi{
+.title-subrayado{
     border-bottom: 1px solid;
     border-left: 1px solid;
     padding-left: 12px;
@@ -371,6 +376,40 @@ section {
 .style-sobre-mi-img{
     margin: auto;
 }
+
+
+/**************/
+/* CONTACTAME */
+/**************/
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.link-chat{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    margin-bottom: 40px;
+    padding: 10px 12px;
+    border-radius: 8px;
+    transition: 0.8s;
+}
+.link-chat:hover{
+    background-color: #149fca;
+    -webkit-box-shadow: 0px 0px 13px -3px rgba(20, 160, 202, 0);
+    -moz-box-shadow: 0px 0px 13px -3px rgba(20,159,202,1);
+    box-shadow: 0px 0px 13px -3px rgba(20,159,202,1);
+}
+.icon-redes{
+    width: 30px;
+    color: #fff;
+    margin-right: 10px;
+}
+
+
+
 /* ****** */
 /* FOOTER */
 /* ****** */

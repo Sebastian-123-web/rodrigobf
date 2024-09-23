@@ -3,8 +3,12 @@
 const star = document.getElementsByClassName('universe')
 
 const t_monitor = document.documentElement.scrollHeight
+const t_ = document.getElementById('body').clientHeight
+console.log(t_)
+console.log(t_monitor)
 const t_monitor_medio = t_monitor / 2
 const l_monitor = document.documentElement.scrollWidth
+console.log(l_monitor)
 const l_monitor_medio = l_monitor / 2
 
 let l_random = Number
