@@ -1,10 +1,10 @@
 
 // CONFIGURACION DE ESTRELLAS EN LA PANTALLA
+/*
 const star = document.getElementsByClassName('universe')
 
 const t_monitor = document.documentElement.scrollHeight
-const t_ = document.getElementById('body').clientHeight
-console.log(t_)
+
 console.log(t_monitor)
 const t_monitor_medio = t_monitor / 2
 const l_monitor = document.documentElement.scrollWidth
@@ -39,7 +39,20 @@ for (let i = 1; i <= starLot; i++) {
             ` 
 }
 star[0].innerHTML = stars
+*/
 
+const totalStar = 200
+const universe = document.getElementsByClassName('universe')
+const screenHeight = document.documentElement.offsetHeight
+console.log(screenHeight)
+
+let stars = []
+
+for (let index = 0; index < totalStar; index++) {
+    stars += `<span style="top: ${Math.ceil(Math.random()*100)}vh; left: ${Math.ceil(Math.random()*97)}vw;" class="color_star${Math.ceil(Math.random()*3)}"></span>`
+}
+
+universe[0].innerHTML = stars
 
 
 // DATOS DE LOS PROYECTOS PARA INSERTAR EN EL HTML
