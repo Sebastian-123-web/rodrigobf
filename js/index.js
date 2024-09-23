@@ -215,3 +215,14 @@ dataProjects.forEach( p => {
     `
 })
 galeryProjects.innerHTML = insertProject
+
+
+document.addEventListener("mousemove", coordenadasMouse)
+
+const mouseMove = document.getElementById('mouseMove')
+const coorY = document.documentElement.scrollHeight
+function coordenadasMouse(e) {
+    //console.log("X: ",e.clientX, " Y: ",e.clientY)
+    mouseMove.style.top = `${e.clientY}px`
+    mouseMove.style.left = `${e.clientX}px`
+}
