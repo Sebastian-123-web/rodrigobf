@@ -18,8 +18,8 @@ universe[0].innerHTML = stars
 
 const dataProjects = [
     {
-        title : "Miru Outfit",
-        description : "Proyecto en Proceso: Web sobre exhibición de ropa de invierno para la venta por internet con delivery.",
+        title : "Miru Boutique",
+        description : "[PROYECTO EN DESARROLLO]: Web sobre exhibición de ropa de invierno para la venta por internet.",
         urlimage : "https://i.postimg.cc/dVQYdVvs/Captura-de-pantalla-2024-09-27-095449.png",
         urlWeb: "https://miru-nine.vercel.app/",
         urlGithub : "https://github.com/Sebastian-123-web/miru",
