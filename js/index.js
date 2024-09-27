@@ -19,7 +19,7 @@ universe[0].innerHTML = stars
 const dataProjects = [
     {
         title : "Miru Outfit",
-        description : "Proyecto web sobre exhibición de ropa de invierno.",
+        description : "Proyecto en Proceso: Web sobre exhibición de ropa de invierno para la venta por internet con delivery.",
         urlimage : "https://i.postimg.cc/dVQYdVvs/Captura-de-pantalla-2024-09-27-095449.png",
         urlWeb: "https://miru-nine.vercel.app/",
         urlGithub : "https://github.com/Sebastian-123-web/miru",
@@ -171,9 +171,12 @@ dataProjects.forEach( p => {
                     <img src="assets/github.svg" alt="">
                 </a>
             </div>
-
+                
             <a href="${p.urlWeb}" target="_blank" class="link-image">
                 <div class="img-project">
+                    <div class="project-link">
+                        <img src="assets/link.svg" alt="" class="link">
+                    </div>
                     <img src="${p.urlimage}" alt="">
                 </div>
             </a>
