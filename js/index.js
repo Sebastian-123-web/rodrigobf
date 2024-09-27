@@ -1,46 +1,5 @@
 
 // CONFIGURACION DE ESTRELLAS EN LA PANTALLA
-/*
-const star = document.getElementsByClassName('universe')
-
-const t_monitor = document.documentElement.scrollHeight
-
-console.log(t_monitor)
-const t_monitor_medio = t_monitor / 2
-const l_monitor = document.documentElement.scrollWidth
-console.log(l_monitor)
-const l_monitor_medio = l_monitor / 2
-
-let l_random = Number
-let t_random = Number
-let valor_scroll = String
-let stars = []
-
-let starLot = 130
-
-if(document.documentElement.scrollWidth <= 767) starLot = 40
-for (let i = 1; i <= starLot; i++) {
-    l_random = Math.random() * l_monitor
-    t_random = Math.random() * t_monitor
-    if(l_random>l_monitor_medio && t_random>t_monitor_medio){valor_scroll = 'star-scroll-right-top'}
-    else if(l_random>l_monitor_medio && t_random<t_monitor_medio){valor_scroll = 'star-scroll-right-bottom'}
-    else if(l_random<l_monitor_medio && t_random>t_monitor_medio){valor_scroll = 'star-scroll-left-top'}
-    else if(l_random<l_monitor_medio && t_random<t_monitor_medio){valor_scroll = 'star-scroll-left-bottom'}
-
-    stars += `
-                <span 
-                    style="
-                        top:${Math.ceil(Math.random() * t_monitor)}px;
-                        left:${Math.ceil(l_random)}px;
-                        animation-name: ${ valor_scroll };
-                    " 
-                    class="color_star${Math.ceil(Math.random()*3)}">
-                </span>
-            ` 
-}
-star[0].innerHTML = stars
-*/
-
 const totalStar = 300
 const universe = document.getElementsByClassName('universe')
 const screenHeight = document.documentElement.scrollHeight
@@ -59,6 +18,21 @@ universe[0].innerHTML = stars
 
 const dataProjects = [
     {
+        title : "Miru Outfit",
+        description : "Proyecto web sobre exhibición de ropa de invierno.",
+        urlimage : "https://i.postimg.cc/dVQYdVvs/Captura-de-pantalla-2024-09-27-095449.png",
+        urlWeb: "https://miru-nine.vercel.app/",
+        urlGithub : "https://github.com/Sebastian-123-web/miru",
+        technology : [
+            {
+                name: "React",
+            },
+            {
+                name: "Tailwindcss",
+            }
+        ]
+    },
+    {
         title : "Ataraxia Requintado",
         description : "UN ASIENTO que A LA VEZ ES una pieza de arte en sí misma. Las curvas y las líneas del diseño SON elegantes y fluidas, tomando inspiración de la glicina en su aspecto más bello.",
         urlimage : "https://i.postimg.cc/sgqRGT3c/Captura.png",
@@ -67,15 +41,12 @@ const dataProjects = [
         technology : [
             {
                 name: "HTML",
-                color: "#e96228"
             },
             {
                 name: "css",
-                color: "#0091d5"
             },
             {
                 name: "Figma",
-                color: "#ea4c1d"
             }
         ]
     },
@@ -88,15 +59,12 @@ const dataProjects = [
         technology : [
             {
                 name: "HTML",
-                color: "#e96228"
             },
             {
                 name: "css",
-                color: "#0091d5"
             },
             {
                 name: "Figma",
-                color: "#ea4c1d"
             }
         ]
     },
@@ -109,19 +77,15 @@ const dataProjects = [
         technology : [
             {
                 name: "Vite",
-                color: "#e96228"
             },
             {
                 name: "Tailwindcss",
-                color: "#0091d5"
             },
             {
                 name: "Material-Tailwind",
-                color: "#ea4c1d"
             },
             {
                 name: "React Router Dom",
-                color: "#ea4c1d"
             }
         ]
     },
@@ -134,15 +98,12 @@ const dataProjects = [
         technology : [
             {
                 name: "React",
-                color: "#e96228"
             },
             {
                 name: "React-router-dom",
-                color: "#0091d5"
             },
             {
                 name: "Sweetalert2",
-                color: "#ea4c1d"
             }
         ]
     },
@@ -155,20 +116,17 @@ const dataProjects = [
         technology : [
             {
                 name: "HTML",
-                color: "#e96228"
             },
             {
                 name: "CSS",
-                color: "#0091d5"
             },
             {
                 name: "Javascript",
-                color: "#ea4c1d"
             }
         ]
     },
     {
-        title : "Tarea: Blog Afrianska",
+        title : "Proyecto: Blog Afrianska",
         description : "Web donde nuestro mi habilidad con HTML y CSS.",
         urlimage : "https://i.postimg.cc/WzSs8Nt2/Captura-de-pantalla-2024-09-18-174900.png",
         urlWeb: "https://quinto-reto.vercel.app/",
@@ -176,16 +134,14 @@ const dataProjects = [
         technology : [
             {
                 name: "HTML",
-                color: "#e96228"
             },
             {
                 name: "CSS",
-                color: "#0091d5"
             }
         ]
     },
     {
-        title : "Tarea: Sunnyside",
+        title : "Proyecto: Sunnyside",
         description : "Proyecto grupal - Web donde nuestro mi habilidad con HTML y CSS.",
         urlimage : "https://i.postimg.cc/8zzmttXD/Captura-de-pantalla-2024-09-18-180108.png",
         urlWeb: "https://segundo-reto-grupal.vercel.app/",
