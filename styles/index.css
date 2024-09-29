@@ -320,7 +320,7 @@ section {
 .title-project h3 {
     color: #149fca;
     font-weight: 700;
-    font-size: 1rem;
+    font-size: 1.7rem;
     margin: 0;
 }
 .title-project a {
@@ -445,10 +445,16 @@ section {
 /* FOOTER */
 /* ****** */
 .footer-section{
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .sol{
     position: absolute;
@@ -576,6 +582,7 @@ section {
     .footer{
         width: 100%;
         flex-direction: column;
+        justify-content: center;
     }
     footer{
         position: relative;
