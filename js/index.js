@@ -3,7 +3,6 @@
 const totalStar = 300
 const universe = document.getElementsByClassName('universe')
 const screenHeight = document.documentElement.scrollHeight
-console.log(screenHeight)
 
 let stars = []
 
