@@ -201,3 +201,33 @@ function coordenadasMouse(e) {
     mouseMove.style.top = `${e.clientY}px`
     mouseMove.style.left = `${e.clientX}px`
 }
+
+
+
+
+const viewContentHackathon = document.querySelectorAll(".view-content-hackathon")
+
+viewContentHackathon.forEach((element)=>{
+    element.addEventListener("click", async function () {
+        const hackathon = document.getElementById(this.parentElement.parentElement.id)
+        const id = this.parentElement.parentElement.children[1].id
+
+        const ElementMD = document.getElementById(id)
+        // const md = fetch("../assets/md/README.md")
+        //             .then((response) => response.text())
+        //             .then(text => {
+        //                 const converter = new showdown.Converter()
+        //                 const html = converter.makeHtml(text) 
+        //                 ElementMD.innerHTML = html
+        //             })
+        //             .catch(error => console.log(error))
+
+        const response = await fetch("../assets/md/README.md")
+        const markdownText = await response.text()
+        const htmlContent = marked.parse(markdownText)
+        ElementMD.innerHTML = htmlContent
+
+        hackathon.classList.toggle("activeH")
+        this.classList.toggle("active")
+    })
+})
